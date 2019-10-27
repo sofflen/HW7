@@ -73,13 +73,20 @@ public class Collection {
         return true;
     }
 
-        int indexOf (String string){
-            for (int i = 0; i < count; i++) {
-                if (string.equals(arr[i])) {
-                    return i;
-                }
+    int indexOf(String string) {
+        for (int i = 0; i < count; i++) {
+            if (string.equals(arr[i])) {
+                return i;
             }
-            return -1;
         }
+        return -1;
     }
+
+    void clear() {
+        for (int i = 0; i < count; i++) {
+            arr[i] = null;
+        }
+        count = 0;
+    }
+}
 

@@ -68,6 +68,15 @@ public class Main {
         System.out.println("Testing method .indexOf:");
         System.out.println(collection.indexOf("L"));
         System.out.println(collection.indexOf("T"));
+        System.out.println("Testing method .clear:");
+        collection2.clear();
+        System.out.println(collection2.getSize());
+        System.out.println(collection2.getByIndex(0));
+        System.out.println(collection2.getByIndex(1));
+        collection2.add("a");
+        collection2.add("b");
+        System.out.println(collection2.indexOf("a"));
+        System.out.println(collection2.indexOf("b"));
 
     }
 }
